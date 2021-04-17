@@ -49,10 +49,7 @@ class TodoController extends Controller
      */
     public function show(Todo $todo)
     {
-        $item = Todo::where('id',$todo->id)->first();
-        return response()->json([
-            'data'=> $item
-        ]);
+        
     }
 
     /**
